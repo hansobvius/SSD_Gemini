@@ -9,11 +9,16 @@ The `.gemini/` folder is the core configuration directory for the Gemini CLI's a
 
 Inside `.gemini/`, you'll find:
 
+- **`rules/`**: This directory contains mandatory guidelines that the AI agents must strictly adhere to.
+  - **`git_commits.md`**: Enforces the exclusive use of the `speckit.commit.md` workflow for any Git commit operations, overriding the agent's default behavior.
+
 - **`workflows/`**: This directory contains step-by-step instructions (workflows) that the AI agents follow to complete complex tasks autonomously.
   - **`speckit.commit.md`**: An automated Git commit workflow. When triggered, the agent analyzes project changes, prompts the user to select the target branch (current or new), generates an appropriate commit message, and executes the commit upon user approval.
   - **`speckit.pr.md`**: An automated Pull Request workflow. The agent checks if the local repository is linked to a remote origin. If linked, it pushes the current branch and creates a PR. If not, it assists the user in linking the repository before proceeding.
+  - **`speckit.release.md`**: An automated GitHub Release workflow. The agent verifies if the GitHub CLI (`gh`) is installed, prompts for a release version, and creates a new release with auto-generated notes.
   
-- **`skills/`**: (Currently empty) This directory is intended for custom executable tools or scripts (skills) that extend the capabilities of the AI agents.
+- **`skills/`**: This directory contains custom executable tools or scripts (skills) that extend the capabilities of the AI agents.
+  - **`watch_gemini.ps1`**: A PowerShell watcher script that monitors the `.gemini` directory for any file modifications and automatically restarts the Gemini session to apply the changes immediately.
 
 ### `.vscode/`
 Contains Visual Studio Code workspace settings.
