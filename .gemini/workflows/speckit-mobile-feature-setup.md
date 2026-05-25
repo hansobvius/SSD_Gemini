@@ -5,7 +5,7 @@ description: Workflow exclusivo para projetos mobile. Serve para a criação, es
 # Workflow: Setup Interativo de Novas Features (SDD) - Mobile
 
 > [!IMPORTANT]
-> Este workflow serve **unicamente** para o setup de features em **projetos mobile**.
+> **ATENÇÃO:** Este workflow serve **unicamente** para o setup de features em **projetos mobile**.
 
 Este workflow orienta o agente de IA no processo de intake interativo para a especificação e criação de uma nova feature no projeto mobile, garantindo total conformidade com o padrão definido no arquivo [SPEC-MOBILE.md](../specs/SPEC-MOBILE.md).
 
