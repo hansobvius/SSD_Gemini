@@ -1,10 +1,13 @@
 ---
-description: Workflow para a criação, especificação interativa e setup de uma nova feature utilizando Spec-Driven Development (SDD) e entrevista ativa de requisitos.
+description: Workflow exclusivo para projetos mobile. Serve para a criação, especificação interativa e setup de uma nova feature utilizando Spec-Driven Development (SDD) e entrevista ativa de requisitos.
 ---
 
-# Workflow: Setup Interativo de Novas Features (SDD)
+# Workflow: Setup Interativo de Novas Features (SDD) - Mobile
 
-Este workflow orienta o agente de IA no processo de intake interativo para a especificação e criação de uma nova feature no projeto, garantindo total conformidade com o padrão definido no arquivo [SPEC-MOBILE.md](../specs/SPEC-MOBILE.md).
+> [!IMPORTANT]
+> Este workflow serve **unicamente** para o setup de features em **projetos mobile**.
+
+Este workflow orienta o agente de IA no processo de intake interativo para a especificação e criação de uma nova feature no projeto mobile, garantindo total conformidade com o padrão definido no arquivo [SPEC-MOBILE.md](../specs/SPEC-MOBILE.md).
 
 O agente deve guiar o usuário em uma entrevista estruturada em etapas consecutivas e ordenadas, coletando as informações necessárias para preencher e persistir a especificação técnica da feature.
 
