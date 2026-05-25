@@ -1,0 +1,1 @@
+- Create a push every time a commit happen
