@@ -22,4 +22,10 @@ You **MUST** consider the user input before proceeding (if not empty).
    - Generate a clear, concise commit message based on the changes.
    - Ask the user to review the commit message before running the commit command.
    - If approved, run `git commit -m "<message>"`.
-5. **Stop and report**: Report the created commit hash and the branch it was committed to.
+5. **Push to Remote**:
+   - Run `git remote -v` to check if a remote repository is configured.
+   - If an `origin` remote exists:
+     - Run `git rev-parse --abbrev-ref HEAD` to get the current branch name.
+     - Push the committed changes to the remote branch using `git push -u origin <current_branch>`.
+   - If no remote is configured, inform the user that the commit was created locally but could not be pushed.
+6. **Stop and report**: Report the created commit hash, the branch it was committed to, and whether the push was successful.
