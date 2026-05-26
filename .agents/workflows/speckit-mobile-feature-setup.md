@@ -5,7 +5,7 @@ description: Workflow exclusivo para projetos mobile. Serve para a criação, es
 # Workflow: Setup Interativo de Novas Features (SDD) - Mobile
 
 > [!IMPORTANT]
-> Este workflow serve **unicamente** para o setup de features em **projetos mobile**.
+> **ATENÇÃO:** Este workflow serve **unicamente** para o setup de features em **projetos mobile**.
 
 Este workflow orienta o agente de IA no processo de intake interativo para a especificação e criação de uma nova feature no projeto mobile, garantindo total conformidade com o padrão definido no arquivo [SPEC-MOBILE.md](../specs/SPEC-MOBILE.md).
 
@@ -18,7 +18,7 @@ O agente deve guiar o usuário em uma entrevista estruturada em etapas consecuti
 ### 1. Etapa de Identificação Inicial
 O agente deve iniciar a conversa saudando o usuário e coletando os dados básicos de identificação da feature:
 * **Nome da Feature** (ex: `Autenticação com Google`)
-* **ID da Feature** (ex: `FEATURE-0001` ou incrementado baseado nas specs existentes em `.gemini/specs/`)
+* **ID da Feature** (ex: `FEATURE-0001` ou incrementado baseado nas specs existentes em `.antigravity/specs/`)
 * **Objetivo Principal** (O que a feature realiza de valor para o negócio/usuário)
 
 ### 2. Entrevista Estruturada (Obrigatório seguir esta ordem)
@@ -53,8 +53,8 @@ Uma vez coletados os **Requisitos Funcionais**, as **Regras de Negócio** e os *
    * **Seção 6 (Requisitos funcionais e Regras de negócio):** Inserir as tabelas populadas com as IDs `RF-*` e `RN-*`.
    * **Seção 17 (Critérios de aceite):** Inserir a tabela populada com as IDs `CA-*`.
    * **Seção 16 (Estratégia de testes):** Mapear testes unitários básicos e de widget (`TU-*` e `TW-*`) correlacionados com os requisitos levantados.
-3. **Persistir a Spec:** Criar o arquivo no diretório `.gemini/specs/` com o nome estruturado:
-   * **Caminho:** `.gemini/specs/FEATURE-<ID>-<nome-da-feature>.md` (ex: `c:\Users\thiag\Projetos\Gemini_CLI_Projects\SDD_Gemini\.gemini\specs\FEATURE-0001-login-social.md`).
+3. **Persistir a Spec:** Criar o arquivo no diretório `.antigravity/specs/` com o nome estruturado:
+   * **Caminho:** `.antigravity/specs/FEATURE-<ID>-<nome-da-feature>.md` (ex: `c:\Users\thiag\Projetos\Gemini_CLI_Projects\SDD_Gemini\.antigravity\specs\FEATURE-0001-login-social.md`).
 4. **Apresentar e Solicitar Aprovação Final (DoR):**
    * Mostrar o link do arquivo gerado para o usuário.
    * Exibir uma tabela resumo contendo as chaves coletadas (`RF`, `RN`, `CA`).

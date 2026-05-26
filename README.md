@@ -1,13 +1,13 @@
-# Gemini CLI SDD (Spec-Driven Development)
+# Antigravity CLI SDD (Spec-Driven Development)
 
-This project serves as a starting environment for Spec-Driven Development (SDD) using the Gemini CLI. The goal of SDD is to leverage AI agents to streamline software development by turning specifications into code. This repository configures a standardized workspace, including automated agent workflows and VS Code task integrations to enhance the developer experience with the Gemini CLI.
+This project serves as a starting environment for Spec-Driven Development (SDD) using the Antigravity CLI. The goal of SDD is to leverage AI agents to streamline software development by turning specifications into code. This repository configures a standardized workspace, including automated agent workflows and VS Code task integrations to enhance the developer experience with the Antigravity CLI.
 
 ## Directory Structure
 
-### `.gemini/`
-The `.gemini/` folder is the core configuration directory for the Gemini CLI's agentic capabilities. It contains instructions, rules, skills, and workflows that define how the AI agents should operate within this project.
+### `.antigravity/`
+The `.antigravity/` folder is the core configuration directory for the Antigravity CLI's agentic capabilities. It contains instructions, rules, skills, and workflows that define how the AI agents should operate within this project.
 
-Inside `.gemini/`, you'll find:
+Inside `.antigravity/`, you'll find:
 
 - **`rules/`**: This directory contains mandatory guidelines that the AI agents must strictly adhere to.
   - **`git_commits.md`**: Enforces the exclusive use of the `speckit.commit.md` workflow for any Git commit operations, overriding the agent's default behavior.
@@ -18,14 +18,14 @@ Inside `.gemini/`, you'll find:
   - **`speckit.release.md`**: An automated GitHub Release workflow. The agent verifies if the GitHub CLI (`gh`) is installed, prompts for a release version, and creates a new release with auto-generated notes.
   
 - **`skills/`**: This directory contains custom executable tools or scripts (skills) that extend the capabilities of the AI agents.
-  - **`watch_gemini.ps1`**: A PowerShell watcher script that monitors the `.gemini` directory for any file modifications and automatically restarts the Gemini session to apply the changes immediately.
+  - **`watch_antigravity.ps1`**: A PowerShell watcher script that monitors the `.antigravity` directory for any file modifications and automatically restarts the Antigravity session to apply the changes immediately.
 
 ### `.vscode/`
 Contains Visual Studio Code workspace settings.
-- **`tasks.json`**: Automates the startup of the Gemini CLI whenever this project folder is opened in VS Code, ensuring the development environment is immediately ready for interaction.
+- **`tasks.json`**: Automates the startup of the Antigravity CLI whenever this project folder is opened in VS Code, ensuring the development environment is immediately ready for interaction.
 
 ## Getting Started
 
 1. Open this project folder in Visual Studio Code.
-2. The Gemini CLI will automatically launch in the integrated terminal (via `.vscode/tasks.json`).
-3. Interact with the Gemini CLI agent to start developing based on your specifications or to utilize the configured `commit` and `pr` workflows.
+2. The Antigravity CLI will automatically launch in the integrated terminal (via `.vscode/tasks.json`).
+3. Interact with the Antigravity CLI agent to start developing based on your specifications or to utilize the configured `commit` and `pr` workflows.
