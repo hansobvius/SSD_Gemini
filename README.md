@@ -29,3 +29,5 @@ Contains Visual Studio Code workspace settings.
 1. Open this project folder in Visual Studio Code.
 2. The Antigravity CLI will automatically launch in the integrated terminal (via `.vscode/tasks.json`).
 3. Interact with the Antigravity CLI agent to start developing based on your specifications or to utilize the configured `commit` and `pr` workflows.
+
+

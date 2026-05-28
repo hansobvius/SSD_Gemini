@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-Watcher skill to restart the Antigravity session when any file in the .antigravity directory is created or edited.
+Watcher skill to restart the Antigravity session when any file in the .agents directory is created or edited.
 #>
 
 $folderToWatch = (Resolve-Path "$PSScriptRoot\..").Path
