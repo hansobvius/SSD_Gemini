@@ -4,10 +4,10 @@ This project serves as a starting environment for Spec-Driven Development (SDD) 
 
 ## Directory Structure
 
-### `.antigravity/`
-The `.antigravity/` folder is the core configuration directory for the Antigravity CLI's agentic capabilities. It contains instructions, rules, skills, and workflows that define how the AI agents should operate within this project.
+### `.agents/`
+The `.agents/` folder is the core configuration directory for the Antigravity CLI's agentic capabilities. It contains instructions, rules, skills, and workflows that define how the AI agents should operate within this project.
 
-Inside `.antigravity/`, you'll find:
+Inside `.agents/`, you'll find:
 
 - **`rules/`**: This directory contains mandatory guidelines that the AI agents must strictly adhere to.
   - **`git_commits.md`**: Enforces the exclusive use of the `speckit.commit.md` workflow for any Git commit operations, overriding the agent's default behavior.
@@ -18,7 +18,7 @@ Inside `.antigravity/`, you'll find:
   - **`speckit.release.md`**: An automated GitHub Release workflow. The agent verifies if the GitHub CLI (`gh`) is installed, prompts for a release version, and creates a new release with auto-generated notes.
   
 - **`skills/`**: This directory contains custom executable tools or scripts (skills) that extend the capabilities of the AI agents.
-  - **`watch_antigravity.ps1`**: A PowerShell watcher script that monitors the `.antigravity` directory for any file modifications and automatically restarts the Antigravity session to apply the changes immediately.
+  - **`watch_antigravity.ps1`**: A PowerShell watcher script that monitors the `.agents` directory for any file modifications and automatically restarts the Antigravity session to apply the changes immediately.
 
 ### `.vscode/`
 Contains Visual Studio Code workspace settings.
